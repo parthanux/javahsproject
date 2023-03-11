@@ -2,24 +2,33 @@
 //AUTHOR:RISHI(parthanux)
 import java.util.*;
 
-class p2{
-static void main(){
-Scanner sc=new Scanner(System.in);
-int i,n;
-System.out.println("Enter a number");
-n=sc.nextInt();
-System.out.println("Factors are: ");
-for(i=1;i<=n;i++){
-if(n%i==0)
-System.out.println(i);
+class p2 {
+    // Declare the main method, which is the entry point of the program
+    static void main() {
+        // Create a scanner object to read input from the console
+        Scanner sc = new Scanner(System.in);
+        
+        // Declare variables to hold the input number and the loop counter
+        int i, n;
+        
+        // Prompt the user to enter a number
+        System.out.println("Enter a number");
+        
+        // Read the input number from the console
+        n = sc.nextInt();
+        
+        // Print a message to indicate that we're about to print the factors
+        System.out.println("Factors are: ");
+        
+        // Loop through all integers from 1 to n
+        for (i = 1; i <= n; i++) {
+            // Check if i is a factor of n
+            if (n % i == 0) {
+                // If i is a factor, print it to the console
+                System.out.println(i);
+            }
+        }
+    }
 }
-}
-}
-
-// The code declares a class named "p2" with a static method "main".
-// The program uses a scanner object to read user input from the console.
-// It then loops through all integers from 1 to n and checks if they are factors of n.
-// If a factor is found, it is printed to the console.
-
 
 
